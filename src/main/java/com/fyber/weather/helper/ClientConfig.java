@@ -4,12 +4,32 @@ public class ClientConfig {
 	
 	private String apiKey 				= "5f821613fb757b1abe13ba5f0fb04980";
 	private String badAPIKey 			= "5f8a1613ab757a1abe1aba5f0ab04980";
-	private String baseURI 				= "http://api.openweathermap.org/data/2.5/";
+	private String baseURL 				= "http://api.openweathermap.org/data/2.5/";
 	private String authHeader 			= "X-API-KEY";
 	private String badAuthHeader 		= "X-API-KEY-INVALID";
 	private String contentType  		= "application/json";
 	private String emptyAPIKey 			= "";
 	private String notJSONContentType 	= "application/x-shockwave-flash"; 
+	private String imperialUnit			= "imperial";
+	private String metricUnit			= "metric";
+	
+	public String getImperialUnit() {
+		return imperialUnit;
+	}
+
+	public void setImperialUnit(String imperialUnit) {
+		this.imperialUnit = imperialUnit;
+	}
+
+	public String getMetricUnit() {
+		return metricUnit;
+	}
+
+	public void setMetricUnit(String metricUnit) {
+		this.metricUnit = metricUnit;
+	}
+
+	
 	
 	public String getBadAuthHeader() {
 		return badAuthHeader;
@@ -60,11 +80,11 @@ public class ClientConfig {
 	}
 
 	public String getBaseURL() {
-		return baseURI;
+		return baseURL;
 	}
 
 	public void setBaseURL(String baseURL) {
-		this.baseURI = baseURL;
+		this.baseURL = baseURL;
 	}
 
 	public String getApiKey() {
